@@ -141,6 +141,17 @@ h1 {
     margin-top: 0;
 }
 
+/* UI覆盖层 */
+.ui-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+
 /* 选项区域 - 垂直（默认） */
 .options-container {
     display: flex;
