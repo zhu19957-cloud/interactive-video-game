@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动视频游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="mainTitle">互动视频游戏</h1>
+    <h2 id="sceneTitle"></h2>
+
+    <!-- 角色选择区域 -->
+    <div id="characterSelect" class="character-select">
+        <p class="select-hint">选择你的女主角</p>
+        <div class="characters">
+            <div class="character" onclick="selectCharacter(1)">
+                <div class="character-img">
+                    <img src="ziyuan/char1.jpg" alt="角色1" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="character-placeholder">+</div>
+                </div>
+                <span class="character-name">角色 1</span>
+            </div>
+            <div class="character" onclick="selectCharacter(2)">
+                <div class="character-img">
+                    <img src="ziyuan/char2.jpg" alt="角色2" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="character-placeholder">+</div>
+                </div>
+                <span class="character-name">角色 2</span>
+            </div>
+            <div class="character" onclick="selectCharacter(3)">
+                <div class="character-img">
+                    <img src="ziyuan/char3.jpg" alt="角色3" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="character-placeholder">+</div>
+                </div>
+                <span class="character-name">角色 3</span>
+            </div>
+            <div class="character" onclick="selectCharacter(4)">
+                <div class="character-img">
+                    <img src="ziyuan/char4.jpg" alt="角色4" onload="this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+                    <div class="character-placeholder">+</div>
+                </div>
+                <span class="character-name">角色 4</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 视频区域 -->
+    <div id="videoSection" class="video-section" style="display: none;">
+        <div class="video-container">
+            <video id="gameVideo" playsinline>
+                您的浏览器不支持视频播放
+            </video>
+            <div id="optionsContainer" class="options-container options-horizontal">
+            </div>
+        </div>
+    </div>
+
+    <script src="story.js"></script>
+</body>
+</html>
