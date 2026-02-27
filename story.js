@@ -5,14 +5,14 @@ const story = {
         video: "ziyuan/1.mp4",
         title: "开始",
         options: [
-            { text: "去学校", nextScene: 2 },
-            { text: "去咖啡厅", nextScene: 3 }
+            { text: "去吃早餐", nextScene: 2 },
+            { text: "去撸铁", nextScene: 3 }
         ]
     },
     // 场景2: 分支A - 学校
     2: {
         video: "ziyuan/2.mp4",
-        title: "学校",
+        title: "餐厅",
         options: [
             { text: "继续", nextScene: 4 }
         ]
@@ -20,7 +20,7 @@ const story = {
     // 场景3: 分支B - 咖啡厅
     3: {
         video: "ziyuan/3.mp4",
-        title: "咖啡厅",
+        title: "健身房",
         options: [
             { text: "继续", nextScene: 4 }
         ]
